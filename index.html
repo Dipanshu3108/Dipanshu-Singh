@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="background-animation"></div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Dipanshu Singh</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hi, I am <span class="shadow-dance-text">Dipanshu Singh</span></h1>
+                <p>Crafting intelligent solutions, developing with AI.</p>
+                <a href="contact.html" class="btn">Get in Touch</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Featured Work</h2>
+                <div class="featured-grid">
+                    <div class="featured-card">
+                        <h3>Latest Project</h3>
+                        <p>Check out my most recent work</p>
+                        <a href="projects.html" class="btn-small">View Projects</a>
+                    </div>
+                    <div class="featured-card">
+                        <h3>My Experience</h3>
+                        <p>Learn about my professional journey</p>
+                        <a href="experiences.html" class="btn-small">View Experience</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer> -->
+
+    <script>
+        // Simple JavaScript for mobile navigation toggle
+        document.querySelector('.burger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+            document.querySelector('.burger').classList.toggle('toggle');
+        });
+    </script>
+    <script src="background-animation.js"></script>
+</body>
+</html>

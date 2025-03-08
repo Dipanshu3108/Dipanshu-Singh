@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="background-animation"></div>
+    <script src="background-animation.js"></script>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Dipanshu Singh</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>About Me</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <!-- Image and Who I Am section side by side -->
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="DipanshuSingh01.jpg" alt="Profile Picture" id="profile-image">
+                    </div>
+                    <div class="about-text">
+                        <h2>Who I Am 🤔</h2>
+                        <p>A highly motivated and skilled Computer Science professional with a strong foundation in Artificial Intelligence, 
+                            Machine Learning, and Software Development. Adept at designing and implementing intelligent solutions,
+                            leveraging data-driven insights, and optimizing complex systems. Experienced in database management, 
+                            web development, and data analysis, with a keen eye for innovation and problem-solving. 
+                            Recognized for academic excellence, adaptability, and a commitment to continuous learning, 
+                            staying at the forefront of emerging technologies to drive impactful advancements in the field.</p>
+                        
+                        <!-- Education section moved here (below "Who I Am" but still in right column) -->
+                        <h3>Education</h3>
+                        <p>Bachelor of Science in Computer Science<br>
+                        Arizona State University, 2020-2024</p>
+                        <p>Masters of Science in Computer Science<br>
+                            Arizona State University, 2024-2026</p>
+                        
+                        <a href="contact.html" class="btn">Get in Touch</a>
+                    </div>
+                </div>
+                
+                <!-- Skills section moved below the image and text, spanning full width -->
+                <div class="skills-container">
+                    <h3>My Skills</h3>
+                    <div class="skills-section">
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <div class="skill-category-content">
+                                <div class="skill-item">Python</div>
+                                <div class="skill-item">JavaScript</div>
+                                <div class="skill-item">C++</div>
+                                <div class="skill-item">Java</div>
+                                <button class="show-more-btn" id="lang-more">Show More</button>
+                                <div class="more-skills" id="lang-tooltip">
+                                    <div class="skill-item">Kotlin</div>
+                                    <div class="skill-item">Bash</div>
+                                    <div class="skill-item">SQL</div>
+                                    <div class="skill-item">Dart</div>
+                                    <div class="skill-item">C</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-category">
+                            <h4>Frameworks</h4>
+                            <div class="skill-category-content">
+                                <div class="skill-item">PyTorch</div>
+                                <div class="skill-item">React</div>
+                                <div class="skill-item">Flutter</div>
+                                <div class="skill-item">Pandas</div>
+                                <button class="show-more-btn" id="frame-more">Show More</button>
+                                <div class="more-skills" id="frame-tooltip">
+                                    <div class="skill-item">Keras</div>
+                                    <div class="skill-item">ROS</div>
+                                    <div class="skill-item">d3.js</div>
+                                    <div class="skill-item">NumPy</div>
+                                    <div class="skill-item">SciPy</div>
+                                    <div class="skill-item">roomDB</div>
+                                    <div class="skill-item">MySQL</div>
+                                    <div class="skill-item">RealmDB</div>
+                                    <div class="skill-item">AWS</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-category">
+                            <h4>Tools</h4>
+                            <div class="skill-category-content">
+                                <div class="skill-item">Git</div>
+                                <div class="skill-item">GitHub</div>
+                                <div class="skill-item">Jupyter Notebook</div>
+                                <div class="skill-item">Tableau</div>
+                                <button class="show-more-btn" id="tools-more">Show More</button>
+                                <div class="more-skills" id="tools-tooltip">
+                                    <div class="skill-item">Tensor-Board</div>
+                                    <div class="skill-item">Agile (Scrum)</div>
+                                    <div class="skill-item">VSCode</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-category">
+                            <h4>Web Technologies</h4>
+                            <div class="skill-category-content">
+                                <div class="skill-item">HTML5</div>
+                                <div class="skill-item">CSS3</div>
+                                <div class="skill-item">JavaScript</div>
+                                <div class="skill-item">Figma</div>
+                                <button class="show-more-btn" id="web-more">Show More</button>
+                                <div class="more-skills" id="web-tooltip">
+                                    <div class="skill-item">JSON</div>
+                                    <div class="skill-item">Sketch</div>
+                                    <div class="skill-item">Coolors</div>
+                                    <div class="skill-item">Responsive Design</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Simple JavaScript for mobile navigation toggle
+        document.querySelector('.burger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('nav-active');
+            document.querySelector('.burger').classList.toggle('toggle');
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+        // Get all show more buttons
+        const showMoreBtns = document.querySelectorAll('.show-more-btn');
+        
+        // Function to close a tooltip
+        function closeTooltip(tooltip) {
+            if (tooltip && tooltip.classList.contains('active')) {
+                tooltip.classList.remove('active');
+                const btnId = tooltip.id.replace('tooltip', 'more');
+                const btn = document.getElementById(btnId);
+                if (btn) btn.textContent = 'Show More';
+            }
+        }
+        
+        // Function to close all tooltips
+        function closeAllTooltips() {
+            document.querySelectorAll('.more-skills').forEach(tooltip => {
+                closeTooltip(tooltip);
+            });
+        }
+        
+        // Add click event to each button
+        showMoreBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                // Prevent the click from bubbling up
+                e.stopPropagation();
+                
+                // Close all other tooltips first
+                document.querySelectorAll('.more-skills').forEach(t => {
+                    if (t !== this.nextElementSibling && t.classList.contains('active')) {
+                        closeTooltip(t);
+                    }
+                });
+                
+                // Get the tooltip that corresponds to this button
+                const tooltip = this.nextElementSibling;
+                
+                // Toggle the active class
+                tooltip.classList.toggle('active');
+                
+                // Update button text
+                if (tooltip.classList.contains('active')) {
+                    this.textContent = 'Show Less';
+                } else {
+                    this.textContent = 'Show More';
+                }
+            });
+        });
+        
+        // Add mouse leave event to each category
+        document.querySelectorAll('.skill-category-content').forEach(category => {
+            category.addEventListener('mouseleave', function() {
+                // Find the tooltip inside this category
+                const tooltip = this.querySelector('.more-skills');
+                closeTooltip(tooltip);
+            });
+        });
+        
+        // Close tooltips when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.skill-category-content')) {
+                closeAllTooltips();
+            }
+        });
+        
+        // Close tooltips when scrolling (optional, for better user experience)
+        window.addEventListener('scroll', function() {
+            closeAllTooltips();
+        }, { passive: true });
+    });
+    </script>
+</body>
+</html>
