@@ -780,11 +780,21 @@ footer {
     .nav-links {
         width: 60%;
     }
+    .projects-section {
+        margin: 15px 3% 35px 3%; /* Further reduce margins */
+    }
 }
 
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
+    }
+    .projects-section {
+        margin: 15px 2% 35px 2%; /* Even smaller margins */
+    }
+    
+    .projects-section .project-grid {
+        grid-template-columns: 1fr; /* Single column on tablets */
     }
 
     .nav-links {
@@ -886,6 +896,9 @@ footer {
     .nav-links {
         width: 70%;
     }
+    .projects-section {
+        margin: 15px 0 35px 0; /* No side margins on very small screens */
+    }
 
     .timeline::before {
         left: 20px;
@@ -900,10 +913,38 @@ footer {
     }
 }
 
+@media screen and (max-width: 576px) {
+    /* New breakpoint for small phones */
+    .project-grid {
+        grid-template-columns: 1fr; /* Single column for any grid */
+    }
+    
+    .featured-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem; /* Smaller font for very small screens */
+    }
+    
+    .section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        padding: 10px 20px; /* Slightly smaller buttons */
+    }
+}
+
 
 /* Project Section Styling */
 .projects-section {
-    margin: 15px 150px 35px 150px;
+    /* margin: 15px 150px 35px 150px; */
+    margin: 15px 5% 35px 5%;
     /* opacity: 0.8; */
     padding: 40px 0;
     border-radius: 10px;
@@ -948,7 +989,7 @@ footer {
 /* Make project grid elastic */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     max-width: 1400px;
     margin: 0 auto;
@@ -956,7 +997,8 @@ footer {
 
 .projects-section .project-grid {
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important; 
+    /* grid-template-columns: repeat(2, 1fr) !important;  */
+    grid-template-columns: repeat(2, 1fr); 
     gap: 30px;
     width: 100% !important;
     margin: 0 !important; 
