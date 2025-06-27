@@ -51,6 +51,7 @@ img {
 }
 
 .btn-small {
+    position: relative;
     display: inline-block;
     background-color: transparent;
     color: #f5f5dc; /* Beige */
@@ -472,6 +473,9 @@ img {
 }
 /* f5f5dc */
 .project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background-color: #151515;
     border-radius: 10px;
     overflow: hidden;
@@ -504,7 +508,10 @@ img {
 }
 
 .project-info {
+    flex-grow: 1;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-info h3 {
@@ -534,7 +541,8 @@ img {
 }
 
 .project-links {
-    display: flex;
+    margin-top: auto;
+    /* display: flex; */
     gap: 10px;
 }
 
