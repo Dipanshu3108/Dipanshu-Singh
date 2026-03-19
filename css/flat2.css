@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Sora:wght@600;700&display=swap");
+@import url("theme-base.css");
+
+:root {
+    --font-body: "Barlow", sans-serif;
+    --font-heading: "Sora", sans-serif;
+    --body-bg: linear-gradient(180deg, #ffffff, #e5e5e5);
+    --ink: #14213d;
+    --muted: #3a4a68;
+    --accent: #fca311;
+    --accent-2: #000000;
+    --tag-bg: #000000;
+    --tag-ink: #ffffff;
+    --line: rgba(20, 33, 61, 0.24);
+    --card-bg: #ffffff;
+    --surface-alt: #f2f2f2;
+    --header-bg: rgba(229, 229, 229, 0.93);
+    --card-border: 1px solid rgba(20, 33, 61, 0.16);
+    --card-shadow: none;
+    --radius-lg: 10px;
+    --backdrop: none;
+    --shape-a: rgba(252, 163, 17, 0.2);
+    --shape-b: rgba(20, 33, 61, 0.16);
+    --nav-active-ink: #000000;
+}
+
+.glass-card,
+.contact-item,
+.social-links a,
+.btn,
+.theme-switcher,
+.theme-btn,
+.tab-btn,
+.skill-item {
+    box-shadow: none;
+}
+
+.project-card,
+.timeline-item {
+    border-left: 4px solid var(--accent);
+}

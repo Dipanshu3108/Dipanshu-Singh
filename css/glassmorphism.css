@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Syne:wght@600;700&display=swap");
+@import url("theme-base.css");
+
+:root {
+    --font-body: "Outfit", sans-serif;
+    --font-heading: "Syne", sans-serif;
+    --body-bg:
+        radial-gradient(1000px 500px at 12% -10%, rgba(252, 163, 17, 0.24), transparent 60%),
+        radial-gradient(900px 500px at 90% 10%, rgba(52, 160, 164, 0.2), transparent 60%),
+        linear-gradient(160deg, #000000, #14213d 48%, #0b1830);
+    --ink: #e5e5e5;
+    --muted: #b8c7d1;
+    --accent: #fca311;
+    --accent-2: #34a0a4;
+    --tag-bg: linear-gradient(90deg, rgba(252, 163, 17, 0.55), rgba(52, 160, 164, 0.5));
+    --tag-ink: #ffffff;
+    --line: rgba(229, 229, 229, 0.28);
+    --card-bg: rgba(20, 33, 61, 0.52);
+    --surface-alt: rgba(229, 229, 229, 0.09);
+    --header-bg: rgba(0, 0, 0, 0.64);
+    --card-border: 1px solid rgba(255, 255, 255, 0.18);
+    --card-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+    --radius-lg: 22px;
+    --backdrop: blur(12px);
+    --shape-a: rgba(252, 163, 17, 0.16);
+    --shape-b: rgba(52, 160, 164, 0.16);
+    --nav-active-ink: #000000;
+}
+
+.hero-photo img,
+.contact-item,
+.social-links a,
+.theme-btn,
+.tab-btn,
+.skill-item {
+    backdrop-filter: blur(8px);
+}
+
+.btn-secondary {
+    border-color: rgba(229, 229, 229, 0.42);
+}

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dipanshu Singh | Portfolio</title>
+    <link rel="stylesheet" id="theme-stylesheet" href="css/current-ui.css">
+</head>
+<body>
+    <header class="site-header" id="top">
+        <nav class="navbar container">
+            <a class="brand" href="#home">Dipanshu Singh</a>
+            <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-switcher" role="group" aria-label="Switch UI theme">
+                <div class="theme-btn-group" id="theme-btn-group">
+                    <button class="theme-btn" data-theme="current-ui">UI1</button>
+                    <button class="theme-btn" data-theme="neumorphism">UI2</button>
+                    <button class="theme-btn" data-theme="flat2">UI3</button>
+                    <button class="theme-btn" data-theme="bento-grid">UI4</button>
+                    <button class="theme-btn" data-theme="skeuomorphism">UI5</button>
+                    <button class="theme-btn" data-theme="glassmorphism">UI6</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="floating-theme-toggle" id="floating-theme-toggle">
+        <button class="floating-theme-button" id="floating-theme-button" aria-label="Open theme switcher" aria-expanded="false" aria-controls="floating-theme-panel">
+            Theme
+        </button>
+        <div class="floating-theme-panel glass-card" id="floating-theme-panel" aria-hidden="true">
+                    <button class="theme-btn" data-theme="current-ui">UI1</button>
+                    <button class="theme-btn" data-theme="neumorphism">UI2</button>
+                    <button class="theme-btn" data-theme="flat2">UI3</button>
+                    <button class="theme-btn" data-theme="bento-grid">UI4</button>
+                    <button class="theme-btn" data-theme="skeuomorphism">UI5</button>
+                    <button class="theme-btn" data-theme="glassmorphism">UI6</button>
+        </div>
+    </div>
+
+    <main>
+        <section id="home" class="hero section-anchor">
+            <div class="hero-bg-shape shape-a"></div>
+            <div class="hero-bg-shape shape-b"></div>
+            <div class="container hero-layout">
+                <div class="hero-copy glass-card">
+                    <p class="eyebrow">Machine Learning Engineer</p>
+                    <h1>Hi, I am <span class="name-highlight">Dipanshu Singh</span></h1>
+                    <p>
+                        Crafting intelligent solutions with AI, scalable systems, and practical product thinking.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="pdfs/DipanshuSingh_Resume_MLEngineer_ASU.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Resume</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                </div>
+                <figure class="hero-photo glass-card">
+                    <img src="DipanshuSingh01.jpg" alt="Dipanshu Singh portrait">
+                </figure>
+            </div>
+        </section>
+
+        <section id="about" class="section section-anchor">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-grid">
+                    <article class="glass-card about-text">
+                        <h3>Who Am I</h3>
+                        <p>
+                            A highly motivated and skilled Computer Science professional with a strong foundation in Artificial Intelligence,
+                            Machine Learning, and Software Development. Adept at designing and implementing intelligent solutions,
+                            leveraging data-driven insights, and optimizing complex systems.
+                        </p>
+                        <p>
+                            Experienced in database management, web development, and data analysis, with a keen eye for innovation and
+                            problem-solving. Recognized for academic excellence, adaptability, and a commitment to continuous learning.
+                        </p>
+                        <h4>Education</h4>
+                        <p>Bachelor of Science in Computer Science<br>Arizona State University, 2020-2024</p>
+                        <p>Master of Science in Computer Science<br>Arizona State University, 2024-2025</p>
+                    </article>
+
+                    <article class="glass-card skills-panel">
+                        <h3>My Skills</h3>
+
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">Python</span>
+                                <span class="skill-item">JavaScript</span>
+                                <span class="skill-item">C++</span>
+                                <span class="skill-item">Java</span>
+                            </div>
+                            <button class="toggle-more" data-target="lang-more">Show More</button>
+                            <div class="more-skills" id="lang-more">
+                                <span class="skill-item">Kotlin</span>
+                                <span class="skill-item">Bash</span>
+                                <span class="skill-item">SQL</span>
+                                <span class="skill-item">Dart</span>
+                                <span class="skill-item">C</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Frameworks</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">PyTorch</span>
+                                <span class="skill-item">React</span>
+                                <span class="skill-item">Flutter</span>
+                                <span class="skill-item">Pandas</span>
+                            </div>
+                            <button class="toggle-more" data-target="framework-more">Show More</button>
+                            <div class="more-skills" id="framework-more">
+                                <span class="skill-item">Keras</span>
+                                <span class="skill-item">ROS</span>
+                                <span class="skill-item">d3.js</span>
+                                <span class="skill-item">NumPy</span>
+                                <span class="skill-item">SciPy</span>
+                                <span class="skill-item">RoomDB</span>
+                                <span class="skill-item">MySQL</span>
+                                <span class="skill-item">RealmDB</span>
+                                <span class="skill-item">AWS</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Tools</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">Git</span>
+                                <span class="skill-item">GitHub</span>
+                                <span class="skill-item">Jupyter Notebook</span>
+                                <span class="skill-item">Tableau</span>
+                            </div>
+                            <button class="toggle-more" data-target="tools-more">Show More</button>
+                            <div class="more-skills" id="tools-more">
+                                <span class="skill-item">TensorBoard</span>
+                                <span class="skill-item">Agile Scrum</span>
+                                <span class="skill-item">VS Code</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Web Technologies</h4>
+                            <div class="skill-list">
+                                <span class="skill-item">HTML5</span>
+                                <span class="skill-item">CSS3</span>
+                                <span class="skill-item">JavaScript</span>
+                                <span class="skill-item">Figma</span>
+                            </div>
+                            <button class="toggle-more" data-target="web-more">Show More</button>
+                            <div class="more-skills" id="web-more">
+                                <span class="skill-item">JSON</span>
+                                <span class="skill-item">Sketch</span>
+                                <span class="skill-item">Coolors</span>
+                                <span class="skill-item">Responsive Design</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section section-anchor">
+            <div class="container">
+                <h2>Projects</h2>
+                <h3 class="subheading">Current Projects</h3>
+                <div class="project-grid">
+                    <article class="glass-card project-card">
+                        <h4>Ideas Den</h4>
+                        <p>
+                            A collaborative platform to share project ideas, receive feedback, and find global teammates with aligned skills.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Firebase</span>
+                            <span class="tag">React</span>
+                        </div>
+                        <a href="https://www.ideasden.com/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Visit Project</a>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <h4>Agentic AI for Multimodal Tabular Data Extraction</h4>
+                        <p>
+                            Built an AI system to detect, extract, and structure multimodal tabular web data while preserving chart and image relationships.
+                        </p>
+                        <p>
+                            Achieved 91% structure preservation accuracy and reduced manual extraction from 3 hours to under 5 minutes.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Google API</span>
+                            <span class="tag">OCR</span>
+                            <span class="tag">LLM</span>
+                            <span class="tag">Selenium</span>
+                        </div>
+                        <a href="pdfs/CSE_576_Final_Project_Report.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Report</a>
+                    </article>
+                </div>
+
+                <h3 class="subheading">Past Projects</h3>
+                <div class="project-grid">
+                    <article class="glass-card project-card">
+                        <h4>VSLM - Very Small Language Model</h4>
+                        <p>Designed an end-to-end transformer language model training pipeline using Urban Dictionary data.</p>
+                        <div class="project-tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Transformer</span>
+                            <span class="tag">BPE</span>
+                        </div>
+                        <a href="https://github.com/Dipanshu3108/UrbanDictionary_VSLM" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <h4>AI Flash Cards</h4>
+                        <p>Converts raw text and PDFs into personalized, spaced-repetition flashcards using Gemini API.</p>
+                        <div class="project-tags">
+                            <span class="tag">Gemini</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <a href="https://aicards.vercel.app/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Visit Project</a>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <h4>Crime Analysis: Identifying Risk Areas</h4>
+                        <p>Engineered a geospatial GNN over ZIP-code nodes to predict crime hotspots with 86.96% test accuracy.</p>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">GNN</span>
+                            <span class="tag">Geospatial</span>
+                        </div>
+                        <a href="pdfs/CSE_572_Final_Report.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Report</a>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <h4>Tic-Tac-Toe Game</h4>
+                        <p>Mobile game with Minimax and alpha-beta pruning, difficulty levels, local storage, and Bluetooth multiplayer.</p>
+                        <div class="project-tags">
+                            <span class="tag">Android</span>
+                            <span class="tag">iOS</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <div class="button-row">
+                            <a href="pdfs/CSE535_Tic_Tac_Toe_Game.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Report</a>
+                            <a href="https://github.com/Dipanshu3108/TicTacToe" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <h4>Context Monitoring App</h4>
+                        <p>Context-aware Android app using smartphone sensors and RoomDB for ongoing health monitoring.</p>
+                        <div class="project-tags">
+                            <span class="tag">Android</span>
+                            <span class="tag">RoomDB</span>
+                            <span class="tag">Health Tech</span>
+                        </div>
+                        <a href="https://github.com/Dipanshu3108/ContextMonitorApp" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <h4>Probabilistic Image Inpainting</h4>
+                        <p>Analyzed LaMa inpainting under different masks and noise conditions using PSNR, SSIM, and MSE.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">CV</span>
+                            <span class="tag">Bias Analysis</span>
+                        </div>
+                        <div class="button-row">
+                            <a href="pdfs/CSE_598__Probabilistic_Reasoning_and_Learning__Project_Report.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Report</a>
+                            <a href="https://github.com/Dipanshu3108/Image-Inpainting-CSE598" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <h4>Improving LLM Commonsense via Good Listeners</h4>
+                        <p>Fine-tuning on good-listener conversation data improved SocialIQA performance for emotional commonsense reasoning.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">SocialIQA</span>
+                        </div>
+                        <a href="pdfs/CSE_598_Group_15_Project_Report.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Report</a>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <h4>Social Media Photo Sharing App</h4>
+                        <p>Built backend features for uploads, likes, SQL integration, and recommendation-aware content flow.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Backend</span>
+                        </div>
+                        <div class="button-row">
+                            <a href="https://youtu.be/JONdeJ6hhk0?si=aftbxzk0bskYI01I" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Demo</a>
+                            <a href="https://github.com/Dipanshu3108/social-media-App" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Source Code</a>
+                        </div>
+                    </article>
+
+                    <article class="glass-card project-card">
+                        <h4>Image Noise Generator</h4>
+                        <p>A web tool to inject noise into images for deep learning experimentation and analysis.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <a href="https://dipanshu3108.github.io/Image-Noise-Generator/" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Visit Project</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section section-anchor">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="tabs" role="tablist" aria-label="Experience tabs">
+                    <button class="tab-btn active" data-tab="work" role="tab" aria-selected="true">Work Experience</button>
+                    <button class="tab-btn" data-tab="coursework" role="tab" aria-selected="false">Course Work Completed</button>
+                    <button class="tab-btn" data-tab="certifications" role="tab" aria-selected="false">Awards & Certifications</button>
+                </div>
+
+                <div class="tab-panel active" id="work">
+                    <article class="glass-card timeline-item">
+                        <p class="timeline-date">February 2022 - Present</p>
+                        <h4>Technology Consultant</h4>
+                        <p class="company">Arizona State University</p>
+                        <p>
+                            Led and trained technical consultants in diagnosing and resolving educational technology challenges,
+                            reducing classroom downtime by 40%.
+                        </p>
+                    </article>
+
+                    <article class="glass-card timeline-item">
+                        <p class="timeline-date">August 2023 - May 2024</p>
+                        <h4>Research Engineer - Autonomous Systems</h4>
+                        <p class="company">Astro Seed | Arizona State University</p>
+                        <ul>
+                            <li>Integrated ROS and DroneKit for autonomous navigation and image capture.</li>
+                            <li>Designed and tested drone simulations in Gazebo for deployment readiness.</li>
+                            <li>Implemented plant-health analysis algorithms using aerial imagery.</li>
+                        </ul>
+                    </article>
+
+                    <article class="glass-card timeline-item">
+                        <p class="timeline-date">August 2021 - December 2021</p>
+                        <h4>Section Leader / Teaching Assistant</h4>
+                        <p class="company">Ira A. Fulton Schools of Engineering | ASU</p>
+                        <ul>
+                            <li>Co-delivered ASU-101 sessions and interactive learning support.</li>
+                            <li>Mentored students and improved engagement and course outcomes.</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="tab-panel" id="coursework">
+                    <article class="glass-card timeline-item">
+                        <h4>Arizona State University - Key Courses</h4>
+                        <ul class="two-col-list">
+                            <li>Artificial Intelligence</li>
+                            <li>Machine Learning</li>
+                            <li>Data Visualization</li>
+                            <li>Computer Network Security</li>
+                            <li>Mobile Computing</li>
+                            <li>Data Processing at Scale</li>
+                            <li>Human Computer Interaction</li>
+                            <li>Operating Systems</li>
+                            <li>Theoretical Computer Science</li>
+                            <li>Software Engineering</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Applied Data Analytics</li>
+                            <li>Knowledge Representation</li>
+                            <li>Natural Language Processing</li>
+                            <li>Cloud Computing</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="tab-panel" id="certifications">
+                    <article class="glass-card timeline-item">
+                        <p class="timeline-date">2020 - 2024</p>
+                        <h4>Awards</h4>
+                        <ul>
+                            <li>Dean's List Scholar: Fall 2020 to Spring 2024</li>
+                        </ul>
+                    </article>
+
+                    <article class="glass-card timeline-item">
+                        <p class="timeline-date">2022</p>
+                        <h4>Computer Vision Program</h4>
+                        <p class="company">Carnegie Mellon University School of Computer Science</p>
+                        <p>Intensive training in computer vision algorithms and applications.</p>
+                    </article>
+
+                    <article class="glass-card timeline-item">
+                        <p class="timeline-date">2021</p>
+                        <h4>Artificial Intelligence Virtual Experience Program</h4>
+                        <p class="company">Cognizant</p>
+                        <p>Completed hands-on projects in AI applications for business solutions.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-anchor">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-card glass-card">
+                    <p>
+                        Reach out anytime.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <img src="logos/gmail.png" alt="Email icon">
+                            <div>
+                                <h4>Email</h4>
+                                <p>dipanshu3108@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <img src="logos/location.png" alt="Location icon">
+                            <div>
+                                <h4>Location</h4>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/dipanshu-singh-ba698820a/" target="_blank" rel="noopener noreferrer">
+                            <img src="logos/linkedin.png" alt="LinkedIn"> LinkedIn
+                        </a>
+                        <a href="https://github.com/Dipanshu3108" target="_blank" rel="noopener noreferrer">
+                            <img src="logos/github.png" alt="GitHub"> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Built by Dipanshu Singh</p>
+        </div>
+    </footer>
+
+    <script src="scripts/app.js" defer></script>
+</body>
+</html>

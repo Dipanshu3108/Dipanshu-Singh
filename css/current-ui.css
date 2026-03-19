@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700&display=swap");
+@import url("theme-base.css");
+
+:root {
+    --font-body: "Space Grotesk", sans-serif;
+    --font-heading: "Fraunces", serif;
+    --body-bg:
+        radial-gradient(1100px 620px at 8% -16%, rgba(88, 129, 87, 0.24), transparent 60%),
+        radial-gradient(900px 500px at 92% 0%, rgba(163, 177, 138, 0.24), transparent 62%),
+        linear-gradient(180deg, #dad7cd, #f1efe8);
+    --ink: #344e41;
+    --muted: #3a5a40;
+    --accent: #588157;
+    --accent-2: #a3b18a;
+    --tag-bg: linear-gradient(90deg, #588157, #3a5a40);
+    --tag-ink: #ffffff;
+    --line: rgba(52, 78, 65, 0.22);
+    --card-bg: #ece8dd;
+    --surface-alt: rgba(218, 215, 205, 0.72);
+    --header-bg: rgba(218, 215, 205, 0.88);
+    --card-border: 1px solid rgba(52, 78, 65, 0.16);
+    --card-shadow: 0 12px 24px rgba(52, 78, 65, 0.16), 0 0 0 rgba(255, 252, 247, 0.95);
+    --radius-lg: 22px;
+    --backdrop: blur(2px);
+    --shape-a: rgba(88, 129, 87, 0.24);
+    --shape-b: rgba(163, 177, 138, 0.2);
+    --nav-active-ink: #ffffff;
+}

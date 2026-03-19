@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;700&family=Manrope:wght@400;600;700&display=swap");
+@import url("theme-base.css");
+
+:root {
+    --font-body: "Manrope", sans-serif;
+    --font-heading: "Nunito", sans-serif;
+    --body-bg: linear-gradient(145deg, #d9ed92, #b5e48c 45%, #99d98c);
+    --ink: #184e77;
+    --muted: #1a759f;
+    --accent: #168aad;
+    --accent-2: #34a0a4;
+    --tag-bg: linear-gradient(90deg, #168aad, #1e6091);
+    --tag-ink: #ffffff;
+    --line: rgba(24, 78, 119, 0.2);
+    --card-bg: #d8efbf;
+    --surface-alt: #e9f8d8;
+    --header-bg: rgba(217, 237, 146, 0.82);
+    --card-border: 1px solid rgba(255, 255, 255, 0.65);
+    --card-shadow: 11px 11px 22px rgba(97, 133, 109, 0.36), -11px -11px 22px rgba(247, 255, 224, 0.92);
+    --radius-lg: 24px;
+    --backdrop: blur(0);
+    --shape-a: rgba(52, 160, 164, 0.22);
+    --shape-b: rgba(30, 96, 145, 0.18);
+    --nav-active-ink: #ffffff;
+}
+
+.btn-secondary,
+.tab-btn,
+.theme-btn,
+.social-links a,
+.contact-item,
+.skill-item {
+    box-shadow: 6px 6px 12px rgba(160, 176, 201, 0.45), -6px -6px 12px rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+}

@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Archivo+Black&display=swap");
+@import url("theme-base.css");
+
+:root {
+    --font-body: "Plus Jakarta Sans", sans-serif;
+    --font-heading: "Archivo Black", sans-serif;
+    --body-bg:
+        linear-gradient(145deg, #fefae0 0%, #f1d8a3 40%, #dda15e 100%);
+    --ink: #283618;
+    --muted: #606c38;
+    --accent: #bc6c25;
+    --accent-2: #dda15e;
+    --tag-bg: linear-gradient(90deg, #bc6c25, #606c38);
+    --tag-ink: #fffaf0;
+    --line: rgba(40, 54, 24, 0.2);
+    --card-bg: rgba(254, 250, 224, 0.93);
+    --surface-alt: #f4edd0;
+    --header-bg: rgba(254, 250, 224, 0.88);
+    --card-border: 2px solid rgba(96, 108, 56, 0.2);
+    --card-shadow: 0 14px 26px rgba(96, 108, 56, 0.18);
+    --radius-lg: 18px;
+    --backdrop: blur(1px);
+    --shape-a: rgba(188, 108, 37, 0.2);
+    --shape-b: rgba(96, 108, 56, 0.18);
+    --nav-active-ink: #ffffff;
+}
+
+.project-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.project-card {
+    border-radius: 20px;
+    border-width: 2px;
+}
+
+.project-grid .project-card:nth-child(4n + 1) {
+    grid-column: span 4;
+}
+
+.project-grid .project-card:nth-child(4n + 2) {
+    grid-column: span 2;
+}
+
+.project-grid .project-card:nth-child(4n + 3) {
+    grid-column: span 3;
+}
+
+.project-grid .project-card:nth-child(4n + 4) {
+    grid-column: span 3;
+}
+
+.section h2 {
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 980px) {
+    .project-grid,
+    .project-grid .project-card:nth-child(4n + 1),
+    .project-grid .project-card:nth-child(4n + 2),
+    .project-grid .project-card:nth-child(4n + 3),
+    .project-grid .project-card:nth-child(4n + 4) {
+        grid-template-columns: 1fr;
+        grid-column: span 1;
+    }
+}
