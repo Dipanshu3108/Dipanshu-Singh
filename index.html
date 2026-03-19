@@ -4,7 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dipanshu Singh | Portfolio</title>
-    <link rel="stylesheet" id="theme-stylesheet" href="css/current-ui.css">
+    <script>
+        (function () {
+            var themeFileMap = {
+                "current-ui": "css/current-ui.css",
+                "neumorphism": "css/neumorphism.css",
+                "flat2": "css/flat2.css",
+                "bento-grid": "css/bento-grid.css",
+                "skeuomorphism": "css/skeuomorphism.css",
+                "glassmorphism": "css/glassmorphism.css"
+            };
+            var storedTheme = "current-ui";
+
+            try {
+                var candidateTheme = localStorage.getItem("portfolio-theme");
+                if (candidateTheme && themeFileMap[candidateTheme]) {
+                    storedTheme = candidateTheme;
+                }
+            } catch (error) {
+                storedTheme = "current-ui";
+            }
+
+            document.write('<link rel="stylesheet" id="theme-stylesheet" href="' + themeFileMap[storedTheme] + '">');
+        })();
+    </script>
 </head>
 <body>
     <header class="site-header" id="top">

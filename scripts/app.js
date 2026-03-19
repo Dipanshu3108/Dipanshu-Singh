@@ -18,7 +18,9 @@ const themeFileMap = {
 
 function applyTheme(themeName) {
     const cssFile = themeFileMap[themeName] || themeFileMap["current-ui"];
-    themeStylesheet.setAttribute("href", cssFile);
+    if (!themeStylesheet.getAttribute("href") || themeStylesheet.getAttribute("href") !== cssFile) {
+        themeStylesheet.setAttribute("href", cssFile);
+    }
     localStorage.setItem("portfolio-theme", themeName);
     allThemeButtons.forEach((btn) => {
         btn.classList.toggle("active", btn.dataset.theme === themeName);
